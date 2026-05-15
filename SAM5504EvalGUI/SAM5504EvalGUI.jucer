@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="SaM5504G" name="SAM5504EvalGUI" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" version="1.0.0"
+              companyName="Atomik Audio" companyCopyright="2026" bundleIdentifier="com.atomikaudio.sam5504eval"
+              cppLanguageStandard="20" defines="JUCE_STRICT_REFCOUNTEDPOINTER=1">
+  <MAINGROUP id="mainGrp" name="SAM5504EvalGUI">
+    <GROUP id="srcGrp" name="Source">
+      <FILE id="mainCpp" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="mainWinH" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="mainWinCpp" name="MainWindow.cpp" compile="1" resource="0"
+            file="Source/MainWindow.cpp"/>
+      <FILE id="mainCompH" name="MainComponent.h" compile="0" resource="0"
+            file="Source/MainComponent.h"/>
+      <FILE id="mainCompCpp" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="appCtrlH" name="ApplicationController.h" compile="0" resource="0"
+            file="Source/ApplicationController.h"/>
+      <FILE id="appCtrlCpp" name="ApplicationController.cpp" compile="1"
+            resource="0" file="Source/ApplicationController.cpp"/>
+      <FILE id="appStateH" name="AppState.h" compile="0" resource="0" file="Source/AppState.h"/>
+      <FILE id="appStateCpp" name="AppState.cpp" compile="1" resource="0"
+            file="Source/AppState.cpp"/>
+      <GROUP id="fwGrp" name="Firmware">
+        <FILE id="pmH" name="ParameterMap.h" compile="0" resource="0" file="Source/Firmware/ParameterMap.h"/>
+        <FILE id="pmCpp" name="ParameterMap.cpp" compile="1" resource="0" file="Source/Firmware/ParameterMap.cpp"/>
+        <FILE id="nrpnH" name="NrpnEncoder.h" compile="0" resource="0" file="Source/Firmware/NrpnEncoder.h"/>
+        <FILE id="nrpnCpp" name="NrpnEncoder.cpp" compile="1" resource="0"
+              file="Source/Firmware/NrpnEncoder.cpp"/>
+        <FILE id="fcH" name="FirmwareComms.h" compile="0" resource="0" file="Source/Firmware/FirmwareComms.h"/>
+        <FILE id="fcCpp" name="FirmwareComms.cpp" compile="1" resource="0"
+              file="Source/Firmware/FirmwareComms.cpp"/>
+      </GROUP>
+      <GROUP id="dspGrp" name="DSP">
+        <FILE id="haeH" name="HostAudioEngine.h" compile="0" resource="0" file="Source/DSP/HostAudioEngine.h"/>
+        <FILE id="haeCpp" name="HostAudioEngine.cpp" compile="1" resource="0"
+              file="Source/DSP/HostAudioEngine.cpp"/>
+      </GROUP>
+      <GROUP id="uiGrp" name="UI">
+        <FILE id="lafH" name="SAM5504LookAndFeel.h" compile="0" resource="0"
+              file="Source/UI/SAM5504LookAndFeel.h"/>
+        <FILE id="lafCpp" name="SAM5504LookAndFeel.cpp" compile="1" resource="0"
+              file="Source/UI/SAM5504LookAndFeel.cpp"/>
+        <FILE id="fbH" name="FlexBoxLayout.h" compile="0" resource="0" file="Source/UI/FlexBoxLayout.h"/>
+        <FILE id="pcrH" name="ParamControlRow.h" compile="0" resource="0" file="Source/UI/ParamControlRow.h"/>
+        <FILE id="pcrCpp" name="ParamControlRow.cpp" compile="1" resource="0"
+              file="Source/UI/ParamControlRow.cpp"/>
+        <GROUP id="graphGrp" name="graphs">
+          <FILE id="eqgH" name="EQGraphComponent.h" compile="0" resource="0"
+                file="Source/UI/graphs/EQGraphComponent.h"/>
+          <FILE id="eqgCpp" name="EQGraphComponent.cpp" compile="1" resource="0"
+                file="Source/UI/graphs/EQGraphComponent.cpp"/>
+          <FILE id="cxgH" name="CrossoverGraphComponent.h" compile="0" resource="0"
+                file="Source/UI/graphs/CrossoverGraphComponent.h"/>
+          <FILE id="cxgCpp" name="CrossoverGraphComponent.cpp" compile="1" resource="0"
+                file="Source/UI/graphs/CrossoverGraphComponent.cpp"/>
+        </GROUP>
+        <GROUP id="secGrp" name="sections">
+          <FILE id="inH" name="InputSection.h" compile="0" resource="0" file="Source/UI/sections/InputSection.h"/>
+          <FILE id="inCpp" name="InputSection.cpp" compile="1" resource="0" file="Source/UI/sections/InputSection.cpp"/>
+          <FILE id="subH" name="SubSectionPanel.h" compile="0" resource="0" file="Source/UI/sections/SubSectionPanel.h"/>
+          <FILE id="subCpp" name="SubSectionPanel.cpp" compile="1" resource="0"
+                file="Source/UI/sections/SubSectionPanel.cpp"/>
+          <FILE id="midH" name="MidSectionPanel.h" compile="0" resource="0" file="Source/UI/sections/MidSectionPanel.h"/>
+          <FILE id="midCpp" name="MidSectionPanel.cpp" compile="1" resource="0"
+                file="Source/UI/sections/MidSectionPanel.cpp"/>
+        </GROUP>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1"/>
+    <MODULE id="juce_core" showAllCode="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1"/>
+    <MODULE id="juce_dsp" showAllCode="1"/>
+    <MODULE id="juce_events" showAllCode="1"/>
+    <MODULE id="juce_graphics" showAllCode="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" extraCompilerFlags="/W4 /wd4100 /wd4505">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SAM5504EvalGUI"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SAM5504EvalGUI" extraCompilerFlags="/O2 /GL /W3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="E:/Atomik Audio/juce-8.0.12-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <VS2026 targetFolder="Builds/VisualStudio2026" extraCompilerFlags="/W4 /wd4100 /wd4505">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SAM5504EvalGUI"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SAM5504EvalGUI" extraCompilerFlags="/O2 /GL /W3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="E:\Atomik Audio\juce-8.0.12-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="E:/Atomik Audio/juce-8.0.12-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2026>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
